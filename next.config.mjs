@@ -3,6 +3,7 @@ const nextConfig = {
   //   images: {
   //     disableStaticImages: true,
   //   },
+  output: "export",
 };
 
 export default nextConfig;
