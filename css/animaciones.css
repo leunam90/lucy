@@ -1,0 +1,22 @@
+.familia{
+    display: flex;
+    background: url('../public/sprites/familia.png') no-repeat;
+    width: 500px;
+    height: 500px;
+    background-position: 0px 0;
+    animation: move 2s steps(20) infinite;
+}
+.familia2{
+    display: flex;
+    background: url('../public/sprites/sprite.png') no-repeat;
+    width: 500px;
+    height: 500px;
+    background-position: 0px 0;
+    animation: move 2s steps(20) infinite;
+}
+
+@keyframes move {
+    to{
+        background-position: -10000px 0;
+    }
+}
