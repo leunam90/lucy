@@ -1,16 +1,23 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
-const AutoPlayAudio = () => {
+const PlayAudioButton = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  useEffect(() => {
+  const playAudio = () => {
     if (audioRef.current) {
       audioRef.current.play();
     }
-  }, []);
+  };
 
-  return <audio ref={audioRef} src="/cancion.mp3" />;
+  return (
+    <>
+      <button onClick={playAudio} className="bg-red-700 p-4">
+        Reproducir audio
+      </button>
+      <audio ref={audioRef} src="/cancion.mp3" />
+    </>
+  );
 };
 
-export default AutoPlayAudio;
+export default PlayAudioButton;

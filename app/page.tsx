@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Tres from "./_actos/tres";
 import Uno from "./_actos/uno";
 import Final from "./_actos/final";
+import Puerta from "./_actos/puerta";
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -33,6 +34,7 @@ const Home = () => {
   }, [windowWidth]);
   return (
     <main className="flex flex-col items-center justify-start snap-y snap-mandatory overflow-y-auto h-screen">
+      <Puerta windowWidth={windowWidth} imageWidth={imageWidth} windowHeight={windowHeight} />
       <Uno />
       <Tres windowWidth={windowWidth} imageWidth={imageWidth} windowHeight={windowHeight} />
       <Final windowWidth={windowWidth} imageWidth={imageWidth} windowHeight={windowHeight} />
