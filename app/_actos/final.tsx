@@ -28,6 +28,7 @@ const Final = ({ windowWidth, imageWidth, windowHeight }: Props) => {
         </motion.div>
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto3b} className="relative z-20">
           <Image src="/julio.png" width={imageWidth * 1.4} height={imageWidth * 1.4} alt="estas" className="mx-auto" />
+          <Image src="/2pm.png" width={imageWidth} height={imageWidth} alt="estas" className="mx-auto" />
         </motion.div>
         <motion.div className="flex flex-col items-center justify-around p-4 mt-5 gap-2" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto4b}>
           <Link href="https://maps.app.goo.gl/mwHWuC8KcjPEb8YUA" legacyBehavior>
