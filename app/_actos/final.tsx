@@ -30,7 +30,11 @@ const Final = ({ windowWidth, imageWidth, windowHeight }: Props) => {
           <Image src="/julio.png" width={imageWidth * 1.4} height={imageWidth * 1.4} alt="estas" className="mx-auto" />
         </motion.div>
         <motion.div className="flex flex-col items-center justify-around p-4 mt-5 gap-2" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto4b}>
-          <button className="bg-transparent border-white text-white font-medium uppercase border-2 h-12 rounded w-full text-sm">ver ubicación</button>
+          <Link href="https://maps.app.goo.gl/mwHWuC8KcjPEb8YUA" legacyBehavior>
+            <a target="_blank" className="w-full">
+              <button className="bg-transparent border-white text-white font-medium uppercase border-2 h-12 rounded w-full text-sm">ver ubicación</button>
+            </a>
+          </Link>
           <Link href={WhatsAppButton()} legacyBehavior>
             <a target="_blank" className="w-full">
               <button type="button" className="bg-transparent border-white text-white font-medium uppercase border-2 h-12 rounded w-full text-sm flex-none">
