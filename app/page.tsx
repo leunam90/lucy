@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import Dos from "./actos/dos";
-import Tres from "./actos/tres";
-import Uno from "./actos/uno";
-import Final from "./actos/final";
+import Dos from "./_actos/dos";
+import Tres from "./_actos/tres";
+import Uno from "./_actos/uno";
+import Final from "./_actos/final";
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(0);
