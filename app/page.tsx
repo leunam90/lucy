@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Dos from "./_actos/dos";
 import Tres from "./_actos/tres";
 import Uno from "./_actos/uno";
 import Final from "./_actos/final";
