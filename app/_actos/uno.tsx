@@ -31,27 +31,26 @@ const Uno = () => {
   }, [windowWidth]);
   return (
     <section className="w-full md:hidden h-svh bg-[#4e2a74ff] flex flex-col items-center justify-center relative overflow-hidden pt-[15rem] snap-start flex-none">
-      <Image src="/cover1.jpg" width={windowWidth * 1.5} height={windowWidth * 1.5} alt="22" className=" absolute z-10 top-0 left-0" />
+      <Image src="/bg1.jpg" width={windowWidth * 1.5} height={windowWidth * 1.5} alt="22" className=" absolute z-10 top-0 left-0" />
 
       <div className="flex items-center justify-center flex-col z-50">
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto1}>
-          <Image src="/estas.png" width={imageWidth} height={1} alt="estas" />
+          <Image src="/festeja.png" width={imageWidth} height={1} alt="estas" />
         </motion.div>
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto2}>
-          <Image src="/invitado.png" width={imageWidth * 1.7} height={1} alt="estas" />
+          <Image src="/conmigo.png" width={imageWidth * 1} height={1} alt="estas" />
         </motion.div>
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto3} className="flex items-center gap2">
-          <Image src="/AUN.png" width={imageWidth * 0.4} height={1} alt="estas" />
-          <Image src="/cumple2.png" width={imageWidth} height={1} alt="estas" />
+          <Image src="/cumpleaños.png" width={imageWidth * 1} height={1} alt="estas" />
         </motion.div>
-        <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto4}>
+        {/* <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto4}>
           <Image src="/de.png" width={imageWidth * 0.3} height={1} alt="estas" />
-        </motion.div>
+        </motion.div> */}
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto5}>
-          <Image src="/encanto.png" width={imageWidth * 1.3} height={imageWidth * 1.3} alt="estas" />
+          <Image src="/inside.webp" width={imageWidth * 1} height={imageWidth * 1.3} alt="estas" />
         </motion.div>
       </div>
-      <div className="flex w-full items-center justify-center z-50">
+      {/* <div className="flex w-full items-center justify-center z-50">
         <motion.div className="absolute " style={{ right: (imageWidth / 2) * -1, bottom: (imageWidth / 2) * -1 }} initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={F1} animate="rotate">
           <Image src="/flores/flor4.png" width={imageWidth} height={imageWidth} alt="flor1" />
         </motion.div>
@@ -85,7 +84,7 @@ const Uno = () => {
         <motion.div className="absolute bottom-16 left-1" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0.5 }} variants={F1} animate="rotate">
           <Image src="/flores/blanca.png" width={imageWidth * 0.19} height={imageWidth * 0.19} alt="flor1" onClick={() => console.log(imageWidth)} />
         </motion.div>
-      </div>
+      </div> */}
       <div className="absolute z-50">
         {/* <p className="text-3xl text-center">
           {frase1?.split("").map((letra, i) => (

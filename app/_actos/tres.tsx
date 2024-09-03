@@ -12,17 +12,17 @@ interface Props {
 const Tres = ({ windowWidth, imageWidth, windowHeight }: Props) => {
   return (
     <section className="w-full md:hidden h-svh flex flex-col items-center justify-start relative overflow-hidden snap-start flex-none">
-      <div className="w-full bg-cover bg-center h-full absolute top-0 z-10" style={{ backgroundImage: `url('/casita1.jpg')` }}></div>
+      <div className="w-full bg-cover bg-center h-full absolute top-0 z-10" style={{ backgroundImage: `url('/bg3.png')` }}></div>
       <div className="w-full top-12 absolute z-20" style={{ height: windowWidth }}>
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={texto1b} className="relative z-20">
-          <Image src="/isabella2.png" width={imageWidth} height={imageWidth} alt="estas" className="mx-auto" />
+          <Image src="/lucy.png" width={imageWidth} height={imageWidth} alt="estas" className="mx-auto" />
         </motion.div>
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0.7 }} variants={texto2b} className="relative z-50">
           <Image src="/cumple.png" width={imageWidth / 1.5} height={imageWidth / 1.5} alt="estas" className="mx-auto" />
         </motion.div>
         <motion.div initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0.7 }} variants={texto3b} animate="rotate" className="relative mx-auto z-30" style={{ width: imageWidth / 1.4 }}>
-          <Image src="/globo4.png" width={imageWidth / 1.4} height={imageWidth / 1.4} alt="estas" className="mx-auto z-50 relative " />
-          <motion.div className="absolute z-40 top-0" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={F1B} animate="rotate" style={{ left: -imageWidth * 0.1 }}>
+          <Image src="/5.png" width={imageWidth / 1} height={imageWidth / 1.4} alt="estas" className="mx-auto z-50 relative " />
+          {/* <motion.div className="absolute z-40 top-0" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={F1B} animate="rotate" style={{ left: -imageWidth * 0.1 }}>
             <Image src="/flores/flor5.png" width={imageWidth / 2} height={imageWidth / 2} alt="flor1" />
           </motion.div>
           <motion.div className="absolute z-20" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={F3B} animate="rotate" style={{ left: imageWidth * 0.17, top: -imageWidth * 0.16 }}>
@@ -42,17 +42,17 @@ const Tres = ({ windowWidth, imageWidth, windowHeight }: Props) => {
           </motion.div>
           <motion.div className="absolute z-40" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={F3B} animate="rotate" style={{ left: -imageWidth * 0.05, bottom: -imageWidth * 0.1 }}>
             <Image src="/flores/blanca.png" width={imageWidth / 2} height={imageWidth / 2} alt="flor1" />
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
-      <motion.div className="w-full absolute  z-30 overflow-hidden" style={{ height: windowWidth, left: -windowWidth * 0.25, bottom: -windowWidth * 0.1 }} initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={MIRABEL} animate="asomar">
+      {/* <motion.div className="w-full absolute  z-30 overflow-hidden" style={{ height: windowWidth, left: -windowWidth * 0.25, bottom: -windowWidth * 0.1 }} initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={MIRABEL} animate="asomar">
         <Image src="/mirabel.png" width={windowWidth / 2.5} height={windowWidth} alt="a" className="" />
       </motion.div>
       <motion.div className="w-full absolute  z-30 overflow-hidden" style={{ height: windowWidth, right: -windowWidth * 0.16, bottom: windowWidth / 8 }} initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={ISABELA} animate="asomar">
         <Image src="/isabela2.png" width={windowWidth / 1.64} height={windowWidth} alt="a" className="" />
-      </motion.div>
-      <motion.div className="w-full absolute bottom-0 z-30 overflow-hidden" style={{ height: windowWidth, width: windowWidth / 1.8 }} initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={HIJA}>
-        <Image src="/hija1.png" width={windowWidth / 1.8} height={windowWidth} alt="a" className="absolute bottom-1" />
+      </motion.div> */}
+      <motion.div className="w-full absolute bottom-13 z-30 overflow-hidden" style={{ height: windowWidth, width: windowWidth / 5 }} initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={HIJA}>
+        <Image src="/IMG_0751.png" width={windowWidth / 5} height={windowWidth} alt="a" className="absolute bottom-1" />
       </motion.div>
       {/* <div style={{ width: windowWidth / 2, height: windowHeight / 2 }} className="bg-red-300 z-20 bottom-0 absolute">
         <motion.div className="absolute z-40 -left-5" initial={"offScreen"} whileInView={"onScreen"} viewport={{ once: false, amount: 0 }} variants={F1} animate="rotate">
